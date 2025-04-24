@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      td label {
+        margin-left: 20px;
+      }
+      td input[type="radio"] {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./ex02-01a0.html">
+      <fieldset style="width: fit-content">
+        <h1>프런트엔드 개발자 지원서</h1>
+        HTML, CSS, 자바스크립트 기술을 이해하고 실무 경험이 있는 분을 찾습니다.
+        <hr />
+        <h4>개인 정보</h4>
+
+        <table>
+          <tr>
+            <td>
+              <label for="name">이름</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name=""
+                id="name"
+                placeholder="공백없이 입력하시오"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="p-num">연락처</label>
+            </td>
+            <td>
+              <input
+                type="tel"
+                name=""
+                id="p-num"
+                placeholder="010-0000-0000"
+                required
+              />
+            </td>
+          </tr>
+        </table>
+        <h4>지원 분야</h4>
+        <table>
+          <tr>
+            <td><label for="part1" hidden>웹 퍼블리싱</label></td>
+            <td><input type="radio" name="field" id="part1" />웹 퍼블리싱</td>
+          </tr>
+          <tr>
+            <td><label for="part2" hidden>웹 어플리케이션 개발</label></td>
+            <td>
+              <input type="radio" name="field" id="part2" />웹 어플리케이션 개발
+            </td>
+          </tr>
+          <tr>
+            <td><label for="part3" hidden>개발 환경 개선</label></td>
+            <td>
+              <input type="radio" name="field" id="part3" />개발 환경 개선
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <h4>지원 동기</h4>
+          <td><label for="part" hidden>지원 동기</label></td>
+          <td>
+            <textarea
+              name=""
+              id="text-area"
+              cols="60"
+              rows="5"
+              placeholder="본사 지원 동기를 간략히 써 주세요"
+              style="width: 300px"
+            ></textarea>
+          </td>
+        </table>
+        <button type="submit">접수하기</button>
+        <button type="reset">다시쓰기</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
