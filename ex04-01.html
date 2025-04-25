@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        height: 900px;
+      }
+      table,
+      th,
+      td {
+        border: 2px solid #4b3d4b;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 3rem;
+        /* background-color: #1e1e20; */
+        /* color: aliceblue; */
+      }
+      th,
+      td {
+        padding: 5px 5px;
+      }
+      #nav {
+        height: 10%;
+        background-color: lightcoral;
+      }
+      #header,
+      #footer {
+        height: 15%;
+        background-color: lightgrey;
+      }
+      .main-aside {
+        background-color: lightskyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">홈으로</a> <br /><br />
+    <table>
+      <colgroup>
+        <col style="width: 70%" />
+        <col />
+      </colgroup>
+      <tr id="header">
+        <td colspan="2">header</td>
+        <!-- <td></td> -->
+      </tr>
+      <tr id="nav">
+        <td colspan="2">nav</td>
+        <!-- <td></td> -->
+      </tr>
+      <tr class="main-aside">
+        <td style="background-color: lightsteelblue">
+          main
+          <hr />
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem vitae
+          deserunt corporis! Exercitationem voluptas at alias consequatur
+          sapiente delectus iste unde, labore aliquam, repudiandae non molestias
+          nemo beatae cumque rem dignissimos quis! Modi ullam nobis minus, esse
+          assumenda quidem similique illo reprehenderit? Rerum adipisci fugit
+          dolorum odit recusandae sit.
+        </td>
+        <td>
+          Explicabo deleniti commodi nulla, cumque soluta eos! Numquam nemo
+          temporibus dolores natus repudiandae asperiores earum aspernatur
+          officiis eveniet pariatur quidem saepe, nihil rerum voluptas
+          praesentium provident esse quae itaque! Voluptatem.
+        </td>
+      </tr>
+      <tr id="footer">
+        <td colspan="2">footer</td>
+        <!-- <td></td> -->
+      </tr>
+    </table>
+  </body>
+</html>

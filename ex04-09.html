@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상선택자</title>
+    <style>
+      a {
+        color: darkcyan;
+      }
+      a:visited {
+        color: yellowgreen;
+      }
+      a:active {
+        color: rgb(231, 173, 12);
+      }
+      button:disabled,
+      input:disabled {
+        background-color: lightblue;
+      }
+      /*커서가 있는 동안*/
+      input:focus {
+        background-color: rgb(228, 105, 124);
+      }
+      /*선택되어 누르고 있는 동안*/
+      input:active {
+        background-color: rgb(255, 215, 182);
+      }
+      .red-focus:focus {
+        background-color: darkred;
+      }
+      .blue-focus:focus {
+        background-color: darkblue;
+      }
+      div {
+        border: 1px solid black;
+        width: 20px;
+        height: 20px;
+        margin: 1px;
+        background-color: lightsteelblue;
+        display: inline-block;
+      }
+      div:hover {
+        background-color: aquamarine;
+      }
+      input[type]:checked + label {
+        color: red;
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>가상선택자 응용</h1>
+    <a href="https://naver.com">네이버링크</a>
+    <input type="text" name="" id="" />
+    <button disabled>전송</button>
+    <hr />
+    <input
+      type="text"
+      name=""
+      class="red-focus"
+      value="클릭하면 빨갛게 변합니다"
+    />
+    <input
+      type="text"
+      name=""
+      class="blue-focus"
+      value="클릭하면 파랗게 변합니다"
+    />
+    <hr />
+    <label for="eat">간식</label>
+    <input type="checkbox" name="" id="eat" />
+    <label for="meal">식사</label>
+    <input type="checkbox" name="" id="meal" />
+
+    <hr />
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>
