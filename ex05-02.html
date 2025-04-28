@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      li {
+        list-style: none;
+        /* float: left; */
+        display: inline-block;
+        border: 1px solid black;
+        padding: 10px;
+        /* padding 4가지 인자 받을 수 있음
+        1가지 기능: 5px - 위아래좌우 5px 
+        2가지 기능: 5px 10px - 위아래 5px 좌우 10px 
+        3가지 기능: 5px 10px 8px - 위 5px 좌우 10px 아래 8px 
+        4가지 기능: 5px 10px 8px 9px - 위 5px 좌 10px 아래 8px 우 9px */
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <i class="fa-solid fa-web-awesome" style="color: #d897d6"></i> -->
+    <!-- ul>(li>a{메뉴$})*3 -->
+    <ul>
+      <li><i class="fa-solid fa-bars"></i><a href="#">메뉴1</a></li>
+      <li><i class="fa-solid fa-code"></i><a href="#">메뉴2</a></li>
+      <li><i class="fa-solid fa-comment-nodes"></i><a href="#">메뉴3</a></li>
+    </ul>
+  </body>
+</html>

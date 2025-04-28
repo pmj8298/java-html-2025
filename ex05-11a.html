@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .grandparent {
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;
+        position: relative;
+      }
+      .parent {
+        background-color: lightcoral;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 20px;
+      }
+      .child {
+        background-color: lightseagreen;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>조부모, 부모, 자식 관계일 때</h1>
+    <div class="grandparent">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      th,
+      td {
+        border: 2px solid lightsteelblue;
+        padding: 8px;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+      }
+      thead,
+      tfoot {
+        color: rgb(252, 252, 252);
+        background-color: lightblue;
+        position: sticky;
+        z-index: 5;
+      }
+      thead {
+        top: -1px;
+      }
+      tfoot {
+        bottom: -1px;
+      }
+      .table-wrapper {
+        max-height: 200px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.table-wrapper>table>thead>tr>th^^tbody>(tr>td*4)*10 -->
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>나이</th>
+            <th>직업</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>김가나</td>
+            <td>21</td>
+            <td>제빵사</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>김나나</td>
+            <td>22</td>
+            <td>한식요리사</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>김다나</td>
+            <td>23</td>
+            <td>중식요리사</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>김러나</td>
+            <td>24</td>
+            <td>일식요리사</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>김마나</td>
+            <td>25</td>
+            <td>양식요리사</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>김바나</td>
+            <td>26</td>
+            <td>의사</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>김사나</td>
+            <td>27</td>
+            <td>간호사</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>김아나</td>
+            <td>28</td>
+            <td>치과의사</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>김자나</td>
+            <td>29</td>
+            <td>개발자</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>김차나</td>
+            <td>30</td>
+            <td>바리스타</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">테이블 풋터</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
