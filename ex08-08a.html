@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*justify-content: 주축(기본) 왼쪽 -> 오른쪽
+        align-items: 교차축(기본) 위 -> 아래*/
+
+      /* body {
+        display: flex; 부모에게 적용. 자식들이 알아서 잘해요
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      } */
+
+      div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: darkorange;
+        border-radius: 50%;
+        left: 100px;
+        animation: ball 2s ease-in infinite alternate;
+      }
+      @keyframes ball {
+        0% {
+          top: 0px;
+        }
+
+        95% {
+          width: 100px;
+        }
+
+        to {
+          top: 500px;
+          width: 115px;
+          height: 90px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

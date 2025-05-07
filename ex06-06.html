@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div:first-of-type {
+        border: 3px solid darkgreen;
+      }
+      p:first-child {
+        background-color: lightblue;
+      }
+      p:last-child {
+        background-color: lightgreen;
+      }
+      div:last-of-type {
+        border: 3px solid rgb(171, 214, 14);
+      }
+      p:last-of-type {
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">홈으로</a> <br /><br />
+    <h1>구조적 가상 클래스</h1>
+    <div>
+      <p>first입니다.</p>
+      <span>테스트입니댕</span>
+      <p>first-child가 아닙니다.</p>
+      <p>first-child가 아닙니다.</p>
+      <p>first-child가 아닙니다.</p>
+      <p>last 입니다.</p>
+      <span>테스트입니댕</span>
+    </div>
+    <div>
+      <p>first입니다.</p>
+      <p>first-child가 아닙니다.</p>
+      <p>first-child가 아닙니다.</p>
+      <p>first-child가 아닙니다.</p>
+      <p>last 입니다.</p>
+    </div>
+  </body>
+</html>

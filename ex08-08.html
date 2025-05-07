@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*justify-content: 주축(기본) 왼쪽 -> 오른쪽
+        align-items: 교차축(기본) 위 -> 아래*/
+
+      /* body {
+        display: flex; 부모에게 적용. 자식들이 알아서 잘해요
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      } */
+
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: darkorange;
+        animation: mymove 2s alternate ease-in-out;
+      }
+      @keyframes mymove {
+        /* from {
+          transform: translate(0);
+        }
+        to {
+          transform: translate(500px);
+        } */
+        0% {
+          transform: translate(0);
+        }
+        25% {
+          transform: translate(500px, 0);
+        }
+        60% {
+          transform: translate(500px, 500px);
+        }
+        80% {
+          transform: translate(0, 500px);
+        }
+        100% {
+          transform: translate(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

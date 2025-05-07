@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #3e3e3eba;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .login-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+        width: 300px;
+      }
+      h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgb(10, 129, 109);
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+        margin: 10px 0;
+      }
+      button:hover {
+        background-color: rgb(61, 129, 118);
+      }
+      /*
+      input {
+        width: 93%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button:last-of-type {
+        background-color: rgb(13, 121, 223);
+      }
+      button:last-of-type:hover {
+        background-color: rgb(88, 159, 226);
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- div.login-container>h2{로그인}+form>(label+input)*2+button+hr+button -->
+    <div class="login-container">
+      <h2>설문조사</h2>
+      <form
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSegV25D3FVSQBgxFAQPc0IwaFFaezaAqnrIwredLyhbBWQ08Q/formResponse"
+        method="post"
+      >
+        <!-- <p>1. 오늘 먹고 싶은 저녁 메뉴는?</p>
+        <input type="checkbox" id="kmenu" name="inputMenu" />
+        <label for="kmenu">한식</label><br />
+
+        <input type="checkbox" id="cmenu" name="inputMenu" />
+        <label for="cmenu">중식</label><br />
+
+        <input type="checkbox" id="amenu" name="inputMenu" />
+        <label for="amenu">양식</label><br />
+
+        <input type="checkbox" id="jmenu" name="inputMenu" />
+        <label for="jmenu">일식</label><br /> -->
+        <p><label for="menu">1. 오늘 먹고 싶은 저녁 메뉴는?</label></p>
+        <input
+          type="text"
+          id="menu"
+          name="inputMenu"
+          placeholder="메뉴를 입력해주세요"
+        />
+        <br />
+
+        <p><label for="travel">2. 가고싶은 여행지는?</label></p>
+        <input
+          type="text"
+          id="travel"
+          name="inputTravel"
+          placeholder="가고 싶은 여행지를 입력해주세요"
+        />
+        <br />
+
+        <p><label for="age">3. 당신의 연령대는?</label></p>
+        <input type="text" id="age" name="inputAge" placeholder="ex.20대" />
+        <br />
+
+        <button>제출</button>
+      </form>
+    </div>
+  </body>
+</html>

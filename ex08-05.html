@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      .container {
+        border: 3px solid tomato;
+        margin: 50px;
+      }
+      .transformed {
+        background-color: lightblue;
+        border-radius: 10px;
+        transition: transform 1s linear;
+        /* transition: all 1s ease; */
+        /* transition: all 1s ease-in; */
+        /* transition: all 1s ease-in-out; */
+        /* transition: all 1s ease-out; */
+      }
+      .transformed:hover {
+        /* transform: scale(0.5); */
+        /* transform: scale(2); */
+        /* transform: scaleX(1.5); */
+        /* transform: scaleY(0.7); */
+        transform: scale(-1.2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="transformed">transformed</div>
+    </div>
+  </body>
+</html>

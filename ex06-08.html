@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p:first-child {
+        color: springgreen;
+      }
+      p:first-child::after {
+        content: " 과자";
+        color: darkolivegreen;
+      }
+      p::before {
+        content: "❤️";
+      }
+      p:nth-child(2) {
+        color: blueviolet;
+        background-color: lightcyan;
+        display: inline;
+      }
+      p:nth-last-of-type(3)::after {
+        content: "❤️";
+      }
+      p:nth-last-of-type(2)::after {
+        content: " 메로나";
+      }
+      p:last-of-type::after {
+        content: ".감사합니다";
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html">홈으로</a> <br /><br />
+    <p>나의 사랑</p>
+    <p>나의 가족</p>
+    <p>행복미래</p>
+    <p>올 때</p>
+    <p>끝</p>
+  </body>
+</html>

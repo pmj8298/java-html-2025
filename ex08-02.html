@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+      }
+      .container {
+        border: 3px solid tomato;
+        margin: 50px;
+      }
+      .transformed {
+        background-color: lightblue;
+        border-radius: 10px;
+        transition: transform 1s linear;
+        /* transition: all 1s ease; */
+        /* transition: all 1s ease-in; */
+        /* transition: all 1s ease-in-out; */
+        /* transition: all 1s ease-out; */
+      }
+      .transformed:hover {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="transformed">transformed</div>
+    </div>
+  </body>
+</html>
