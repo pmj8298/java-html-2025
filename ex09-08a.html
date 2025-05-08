@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        width: 100%;
+        text-align: center;
+        background-color: rgb(114, 146, 114);
+        color: white;
+        position: fixed;
+        margin: 0;
+        top: 0;
+        padding: 5px;
+      }
+      /* h2 {
+        color: #555;
+        text-align: center;
+      } */
+      ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 60px;
+      }
+      li {
+        list-style: none;
+        width: 300px;
+        height: 200px;
+        padding: 15px;
+        border: 1px solid #bbb;
+        margin: 10px;
+        background-color: rgb(243, 248, 253);
+        border-radius: 10px;
+        overflow: hidden;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .caption {
+        color: white;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.556);
+        border-radius: 10px;
+        width: 300px;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+        display: flex;
+        flex-direction: column;
+      }
+      li:hover .caption {
+        transform: translateY(-205px);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.box>h1{신상품 목록}+ul>(li>img+div.caption>h2{상품$}+p{상품$ 설명텍스트}+p{가격:1$,111원})*9 -->
+    <div class="box">
+      <h1>신상품 목록</h1>
+      <ul>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2016/03/27/19/31/fashion-1283863_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품1</h2>
+            <p>상품1 설명텍스트</p>
+            <p>가격:11,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2015/01/07/18/11/shirts-591750_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품2</h2>
+            <p>상품2 설명텍스트</p>
+            <p>가격:12,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2012/03/04/01/02/baby-22199_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품3</h2>
+            <p>상품3 설명텍스트</p>
+            <p>가격:13,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2018/01/30/12/10/scarf-3118638_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품4</h2>
+            <p>상품4 설명텍스트</p>
+            <p>가격:14,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2013/07/25/11/52/clothes-166848_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품5</h2>
+            <p>상품5 설명텍스트</p>
+            <p>가격:15,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2017/01/16/16/07/sock-1984451_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품6</h2>
+            <p>상품6 설명텍스트</p>
+            <p>가격:16,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2014/07/01/12/23/clothes-381209_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품7</h2>
+            <p>상품7 설명텍스트</p>
+            <p>가격:17,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2019/09/23/01/10/hat-4497323_1280.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품8</h2>
+            <p>상품8 설명텍스트</p>
+            <p>가격:18,111원</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://cdn.pixabay.com/photo/2012/02/17/15/24/shawls-14458_960_720.jpg"
+            alt=""
+          />
+          <div class="caption">
+            <h2>상품9</h2>
+            <p>상품9 설명텍스트</p>
+            <p>가격:19,111원</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

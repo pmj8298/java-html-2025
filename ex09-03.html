@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex layout</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      .wrap {
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        height: 100%;
+      }
+      header,
+      footer {
+        flex: 2;
+        background-color: darkcyan;
+        font-size: 3rem;
+        text-align: center;
+      }
+      footer {
+        font-size: 0.8rem;
+      }
+      nav {
+        flex: 1;
+        background-color: rgb(123, 190, 216);
+      }
+      article {
+        background-color: lightseagreen;
+        flex: 3;
+      }
+      main {
+        display: flex;
+        flex: 12;
+      }
+      aside,
+      section {
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.wrap>header{naver}+nav{nav}+main>aside{aside}+article{article}+section{section}^footer{정보처리방침 정책고객센터 naver corp.} -->
+    <div class="wrap">
+      <header>naver</header>
+      <nav>nav</nav>
+      <main>
+        <aside>aside</aside>
+        <article>article</article>
+        <section>section</section>
+      </main>
+      <footer>정보처리방침 정책고객센터 naver corp.</footer>
+    </div>
+  </body>
+</html>
