@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(248, 248, 181);
+        padding: 15px 30px;
+      }
+      .logo {
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .menu {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding-left: 2rem;
+      }
+      .menu a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        /* line-height: 1.8rem; */
+        background-color: #fff;
+        border-radius: 10px;
+      }
+      .container {
+        display: flex;
+        height: 90vh;
+      }
+      .sidebar {
+        background-color: lightgoldenrodyellow;
+        padding: 1rem;
+        flex-basis: 180px;
+        display: flex;
+        flex-direction: column;
+      }
+      .sidebar a {
+        text-decoration: none;
+        color: black;
+      }
+      .main {
+        flex: 1;
+        background-color: #f8f8f8;
+        padding: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div.navbar>div.logo{MySite}+div.menu>a{Home}*3 -->
+    <div class="navbar">
+      <div class="logo">MySite</div>
+      <div class="menu">
+        <a href="#">Home</a><a href="#">About</a><a href="#">Contact</a>
+      </div>
+    </div>
+    <!-- div.container>div.sidebar>h2{메뉴}+a{대시보드}*3^div.main>h1{Flex 기반 대시보드}+p{페이지설명} -->
+    <div class="container">
+      <div class="sidebar">
+        <h2>메뉴</h2>
+        <a href="">대시보드</a><a href="">사용자 관리</a><a href="">설정</a>
+      </div>
+      <div class="main">
+        <h1>Flex 기반 대시보드</h1>
+        <p>
+          "데이터를 보다 직관적으로, 보다 효율적으로! Flex 기반 대시보드는
+          유연한 디자인과 강력한 기능으로 데이터를 한눈에 파악할 수 있도록
+          도와줍니다. 실시간 분석, 사용자 맞춤 설정, 다양한 시각화 옵션을 통해
+          비즈니스 인사이트를 극대화하세요. 원하는 방식으로 대시보드를 구성하고,
+          필요한 정보를 빠르게 찾아보세요. 손쉬운 조작과 직관적인 인터페이스로
+          누구나 쉽게 사용할 수 있습니다. 변화하는 데이터를 실시간으로 반영하고,
+          팀원들과 원활하게 협업하세요. Flex 기반 대시보드로 업무 생산성을
+          높이고, 보다 스마트한 결정을 내려보세요!"
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
